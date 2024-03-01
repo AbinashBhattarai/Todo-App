@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: linear-gradient(rgb(136, 136, 239), rgb(131, 120, 122));
+  height: 100vh;
+  overflow: hidden;
+}
+
+.todo{
+  max-width: 450px;
+  background-color: white;
+  margin: auto;
+  margin-top: 150px;
+  padding: 5px 0 10px 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.299);
+  border-radius: 5px;
+}
+.todo-input{
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+.todo-input span{
+  font-size: 40px;
+  color: rgb(165, 165, 165);
+}
+.editPend{
+  font-size: 18px;
+  color: rebeccapurple;
+  margin-left: 20px;
+  display: none;
+}
+.todo-input input{
+  padding-left: 30px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+.todo-filters{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+  border-bottom: 2px solid rgb(165, 165, 165);
+}
+.todo-filters span{
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(0.25turn, rgb(226, 222, 115), rgb(127, 88, 107), rgba(56,2,155,0));
+  border-image-slice: 1;
+  cursor: pointer;
+}
+.todo-output{
+  padding:  15px 20px 5px 10px;
+  max-height: 300px;
+  overflow-y:auto;
+}
+.todo-task li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgb(165, 165, 165);
+  padding: 5px;
+}
+.todo-task li label{
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+.todo-task li:last-child{
+  margin-bottom: 10px;
+}
+.todo-task li span{
+  color: rgb(51, 51, 51);
+  cursor: default;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.todo-task li span:hover{
+  color: rgb(119, 119, 119);
+  transform: scale(1.2);
+}
+.todo-task li label p{
+  cursor: pointer;
+  font-size: 17px;
+  padding-left: 15px;
+}
+.todo-task li label input{
+  accent-color: rgb(119, 119, 119);
+  cursor: pointer;
+}
+.line-through{
+  text-decoration: line-through;
+  color: rgb(119, 119, 119);
+}
