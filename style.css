@@ -51,10 +51,11 @@ body{
   border-bottom: 2px solid rgb(165, 165, 165);
 }
 .todo-filters span{
-  border-bottom: 2px solid transparent;
-  border-image: linear-gradient(0.25turn, rgb(226, 222, 115), rgb(127, 88, 107), rgba(56,2,155,0));
   border-image-slice: 1;
   cursor: pointer;
+}
+.border{
+  border-bottom: 2px solid rgb(53, 53, 90);
 }
 .todo-output{
   padding:  15px 20px 5px 10px;
