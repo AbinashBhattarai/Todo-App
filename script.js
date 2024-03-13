@@ -43,7 +43,7 @@ const getTasks = () => {
                         <input type="checkbox" id="${index}" ${task.status == 'completed' ? 'checked' : ''} onclick="setComplete(this)">
                         <p class="${task.status == 'completed' ? 'line-through' : ''}">${task.name}</p>
                       </label>
-                      <div>
+                      <div class="todo-action">
                       <span class="material-symbols-outlined" onclick="editTask(${index})">edit</span>
                       <span class="material-symbols-outlined" onclick="deleteTask(${index})">delete</span>
                       </div>
